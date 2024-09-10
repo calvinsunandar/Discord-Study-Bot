@@ -1,6 +1,4 @@
-﻿# Discord-Study-Bot
-
-Study Bot
+Python Discord Study Bot
 =========
 
 This is a simple study timer bot for Discord that helps users manage their study sessions by providing reminders to take breaks. The bot uses Discord commands to start and end study sessions, and it sends messages at predefined intervals to remind users to take breaks.
@@ -19,11 +17,11 @@ Prerequisites
 1.  **Python 3.7+**: Make sure you have Python installed. You can download it from [here](https://www.python.org/downloads/).
 2.  **Discord.py library**: Install the required libraries using pip:
 
-    `pip install discord.py`
+    ```pip install discord.py```
 
 4.  **pytz library**: Install the `pytz` library for handling timezones:
 
-    `pip install pytz`
+    ```pip install pytz```
 
 Setup Instructions
 ------------------
@@ -39,34 +37,34 @@ Setup Instructions
 
     -   Replace the `BOT_TOKEN` variable in the script with your bot's token:
 
-        `BOT_TOKEN = "Insert Your Bot Token Here"`
+       ```BOT_TOKEN = "Insert Your Bot Token Here"```
 
 4.  **Set your Discord channel ID**:
 
     -   Right-click the channel you want the bot to interact with and copy the channel ID.
     -   Replace the `CHANNEL_ID` variable in the script:
 
-        `CHANNEL_ID = "Insert Your Channel ID Here"`
+        ```CHANNEL_ID = "Insert Your Channel ID Here"```
 
 5.  **Customize the time zone**:
 
     -   Set your desired time zone using `pytz`. The current script uses `America/Chicago`, but you can change it based on your location:
 
-        `local_tz = pytz.timezone('America/Chicago')`
+        ```local_tz = pytz.timezone('America/Chicago')```
 
     -   You can find a list of available time zones [here](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
 6.  **Set the session time**:
 
     -   You can customize the maximum session time before a break reminder by adjusting the `MAX_SESSION_TIME_MINUTES` variable:
 
-        `MAX_SESSION_TIME_MINUTES = 30`
+        ```MAX_SESSION_TIME_MINUTES = 30```
 
 How to Use
 ----------
 
 1.  **Start the bot**: Run the script in your terminal:
 
-    `python bot.py`
+    ```python bot.py```
 
 3.  **Commands**:
 
@@ -83,22 +81,22 @@ Example Usage
 
 -   **Start a study session**:
 
-    `User: !start
-    Bot: New session started at 10:45:30 AM!`
+    ```User: !start
+    Bot: New session started at 10:45:30 AM!```
 
 -   **Break reminder** (after the session runs for 30 minutes):
 
-    `Bot: Time to take a break! You've been studying for 30 minutes.`
+    ```Bot: Time to take a break! You've been studying for 30 minutes.```
 
 -   **End a study session**:
 
-    `User: !end
-    Bot: Session ended after 0 hours, 45 minutes, 30 seconds!`
+    ```User: !end
+    Bot: Session ended after 0 hours, 45 minutes, 30 seconds!```
 
 -   **Shutdown the bot**:
 
-    `User: !shutdown
-    Bot: Goodbye! Shutting down now...`
+    ```User: !shutdown
+    Bot: Goodbye! Shutting down now...```
 
 Notes
 -----
