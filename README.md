@@ -81,22 +81,22 @@ Example Usage
 
 -   **Start a study session**:
 
-    ```User: !start
-    Bot: New session started at 10:45:30 AM!```
+    `User: !start
+    Bot: New session started at 10:45:30 AM!`
 
 -   **Break reminder** (after the session runs for 30 minutes):
 
-    ```Bot: Time to take a break! You've been studying for 30 minutes.```
+    `Bot: Time to take a break! You've been studying for 30 minutes.`
 
 -   **End a study session**:
 
-    ```User: !end
-    Bot: Session ended after 0 hours, 45 minutes, 30 seconds!```
+    `User: !end
+    Bot: Session ended after 0 hours, 45 minutes, 30 seconds!`
 
 -   **Shutdown the bot**:
 
-    ```User: !shutdown
-    Bot: Goodbye! Shutting down now...```
+    `User: !shutdown
+    Bot: Goodbye! Shutting down now...`
 
 Notes
 -----
